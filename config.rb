@@ -13,9 +13,9 @@ Dotenv.load
 activate :sync do |sync|
   sync.fog_provider = 'AWS'
   sync.fog_directory = '...'
-  sync.fog_region = 'us-west-1'
-  sync.aws_access_key_id = ENV['AWS_ACCESS_KEY']
-  sync.aws_secret_access_key = ENV['AWS_SECRET']
+  sync.fog_region = ENV['AWS_REGION']
+  sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+  sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
   sync.existing_remote_files = 'delete'
   sync.gzip_compression = true
 end
