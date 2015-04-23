@@ -5,6 +5,6 @@ gem 'middleman-livereload', '~> 3.1.0'
 
 gem 'slim'
 
-gem 'middleman-s3_sync'
+gem 'middleman-sync'
 gem 'middleman-cloudfront'
 gem 'dotenv'
