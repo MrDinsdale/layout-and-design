@@ -1,0 +1,14 @@
+// Background gradient to use site wide
+@mixin gradient-linear($start-color, $end-color, $start: 0%, $end: 100%) {
+  background: $start-color; /* Old browsers */
+  background: -moz-linear-gradient(top, $start-color $start, $end-color $end); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop($end,$end-color)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $start-color $start,$end-color $end); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $start-color $start,$end-color $end); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $start-color $start,$end-color $end); /* IE10+ */
+  background: linear-gradient(to bottom, $start-color $start,$end-color $end); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start-color}', endColorstr='#{$end-color}',GradientType=0 ); /* IE6-9 */
+}
+
+
+// @include gradient-linear($start-color, $end-color, $start, $end);

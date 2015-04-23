@@ -1,0 +1,92 @@
+body {
+  font-family: $font-body;
+  font-weight: 200;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-heading-bold;
+  font-weight: 400;
+}
+
+a {
+  border: none;
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover {
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+small {
+}
+
+blockquote {
+  color: $grey-mid;
+  font-style: italic;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: .25em dotted $grey-mid;
+  display: block;
+  height: 0;
+  margin: 2em auto;
+  width: 1.75em;
+}
+
+ul {
+  &.horizontal {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      *display: inline;
+    }
+  }
+
+  &.no-bullets {
+    margin-left: 0;
+
+    li {
+      list-style: none;
+    }
+
+    ul {
+      margin-left: 2em;
+
+      li {
+        list-style: circle;
+      }
+    }
+  }
+}
+
+li {
+  padding-bottom: 0.5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.no-break {
+  white-space: nowrap;
+
+  @media(max-width: $break-s) {
+    white-space: normal;
+  }
+}

@@ -1,0 +1,29 @@
+// Colours
+
+$black: #111;
+$white: #FFF;
+$grey-dark: #262525;
+$grey-mid: #787878;
+$grey-light: #DEDEDE;
+
+$orange-dark: #F26938;
+$orange-light: #F28627;
+
+
+// Fonts
+$font-body: 'Open Sans', sans-serif;
+$font-heading-bold: 'bebas-bold', Sans-Serif;
+$font-heading-regular: 'bebas-regular', Sans-Serif;
+
+// Grid Setup
+
+$min-wrapper-wide-width: 1200px;
+$min-wrapper-width: 600px;
+
+$min-grid-gutter: 64px;
+
+$break-l: 960px;
+$break-m: 767px;
+$break-s: 520px;
+
+$min-grid-breakpoints: l $break-l ,m $break-m, s $break-s;
