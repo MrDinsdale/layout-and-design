@@ -1,13 +1,21 @@
 section {
+  box-shadow: 0 .25em 0 rgba($black, 0.2);
   padding: 4em 0;
+  position: relative;
   text-align: center;
 }
 
 .about-us {
   background-color: $orange-dark;
   color: $white;
+  z-index: 5;
 
   .skills {
+    img {
+      margin: 1em auto;
+      max-width: 7.5em;
+    }
+
     h3 {
       font-size: 1.5em;
       margin-bottom: 0;
@@ -21,4 +29,5 @@ section {
 
 .contact {
   background-color: $grey-light;
+  z-index: 2;
 }
