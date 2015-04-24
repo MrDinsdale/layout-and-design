@@ -1,0 +1,10 @@
+.min-button_contact.hollow {
+  border-color: $orange-light;
+  color: $orange-light;
+  display: inline-block;
+  margin-top: 1em;
+
+  &:hover {
+    color: $orange-dark;
+  }
+}

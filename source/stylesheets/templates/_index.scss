@@ -1,6 +1,24 @@
-.under-construction {
-  background-color: $orange-dark;
-  color: $white;
+section {
   padding: 4em 0;
   text-align: center;
+}
+
+.about-us {
+  background-color: $orange-dark;
+  color: $white;
+
+  .skills {
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: .875em;
+    }
+  }
+}
+
+.contact {
+  background-color: $grey-light;
 }
